@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terminal Tycoon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li class="active">Terminal</li>
+      <li>Advanced Terminal</li>
+      <li>Stock Market</li>
+      <li>Blockchains</li>
+      <li>Shop</li>
+      <li>Leaderboard</li>
+      <li>Settings</li>
+    </ul>
+    <div class="user-info">
+      lvl <span id="level">1</span> | <span id="currency">1,000 ₮</span> GU
+    </div>
+  </nav>
+
+  <main>
+    <!-- Terminal Panel -->
+    <section id="terminal-panel" class="panel">
+      <div id="terminal-output" class="output"></div>
+      <input id="command-input" class="input" placeholder="Type a command..." autofocus />
+    </section>
+
+    <!-- Stock & Blockchain Panels (hidden by default) -->
+    <section id="stock-panel" class="panel hidden"></section>
+    <section id="blockchain-panel" class="panel hidden"></section>
+  </main>
+
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
